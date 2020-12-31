@@ -2,21 +2,41 @@
 title: "The #1 corporation in EVE: Echoes"
 metaDescription: Join FTL Industries and experience history being made.
 people:
-  - name: AcidCrush
-    quote: When in doubt, warp out
-    portrait: /images/Acid.png
-    location: 中国
+  - name: The Mandolorian
+    quote: This is the Vishny Way.
+    portrait: /images/characters/Mando.png
+    location: United Kingdom
+  - name: Bob30 Petty
+    quote: From honour to ashes.
+    portrait: /images/characters/Bob.png
+    location: Maple syrup and hockey sticks
+  - name: Idol Wraith
+    quote: Every idol, however exalted, turns out, in the long run, to be a Moloch, hungry for human sacrifice
+    portrait: /images/characters/Idol.png
+    location: United Kingdom (East Coast)
+  - name: ICEPICK
+    quote: Where are my PLs?
+    portrait: /images/characters/Icepick.png
+    location: Oh Canada
   - name: Drea Quiller
     quote: Eat Rocks! Om nom nom nom.
-    portrait: /images/Drea.png
-    location: Oh Canada
+    portrait: /images/characters/Drea.png
+    location: Also Canada
+  - name: AcidCrush
+    quote: When in doubt, warp out.
+    portrait: /images/characters/Acid.png
+    location: 中国
   - name: K1dnyy
     quote: 80m and you can go. You have 60 seconds.
-    portrait: /images/k1dnyy.png
+    portrait: /images/characters/k1dnyy.png
     location: Retroperitoneal space
+  - name: Aluhn
+    quote: EVE is a garden, dig it!
+    portrait: /images/characters/Aluhn.png
+    location: Amerika
   - name: FasterThanLight
-    quote: Come fly with us, that's an invitation!
-    portrait: /images/FTL.png
+    quote: Killing is just a means of communication; come fly with us, that's an invitation!
+    portrait: /images/characters/FTL.png
     location: Finland
 activities:
   - title: Mining
