@@ -22,22 +22,27 @@ people:
     quote: Eat Rocks! Om nom nom nom.
     portrait: /images/characters/Drea.png
     location: Also Canada
+    role: Officer
   - name: AcidCrush
     quote: When in doubt, warp out.
     portrait: /images/characters/Acid.png
     location: 中国
+    role: Officer
   - name: K1dnyy
     quote: 80m and you can go. You have 60 seconds.
     portrait: /images/characters/k1dnyy.png
     location: Retroperitoneal space
+    role: Officer
   - name: Aluhn
     quote: EVE is a garden, dig it!
     portrait: /images/characters/Aluhn.png
     location: Amerika
+    role: Leader
   - name: FasterThanLight
     quote: Killing is just a means of communication; come fly with us, that's an invitation!
     portrait: /images/characters/FTL.png
     location: Finland
+    role: Founder
 activities:
   - title: Mining
     description: We have a bunch of people for really enjoy mining for some reason. This is why we have mining ops every week!
