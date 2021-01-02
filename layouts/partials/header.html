@@ -1,4 +1,8 @@
-<header>
+<header class='{{ if eq .Params.bannerHeight "short" }} short-banner {{ end}}'>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/research-calculator">Research</a>
+  </nav>
   <div class="ftl-stripe"></div>
   <img class="ftl-symbol" src="/images/ftl-symbol.svg" alt="Atom symbol">
   <img class="ftl-logo" src="/images/logo.svg" alt="FTL Industries">

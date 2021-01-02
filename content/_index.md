@@ -11,7 +11,7 @@ people:
     portrait: /images/characters/Bob.png
     location: Maple syrup and hockey sticks
   - name: Idol Wraith
-    quote: Every idol, however exalted, turns out, in the long run, to be a Moloch, hungry for human sacrifice
+    quote: Every idol, however exalted, turns out, in the long run, to be a Moloch, hungry for human sacrifice.
     portrait: /images/characters/Idol.png
     location: United Kingdom (East Coast)
   - name: ICEPICK
@@ -37,12 +37,12 @@ people:
     quote: EVE is a garden, dig it!
     portrait: /images/characters/Aluhn.png
     location: Amerika
-    role: Leader
+    role: CEO
   - name: FasterThanLight
     quote: Killing is just a means of communication; come fly with us, that's an invitation!
     portrait: /images/characters/FTL.png
     location: Finland
-    role: Founder
+    role: Chairman
 activities:
   - title: Mining
     description: We have a bunch of people for really enjoy mining for some reason. This is why we have mining ops every week!
@@ -53,4 +53,5 @@ activities:
   - title: Explosions
     description: It's no good to produce industrial products if there are no buyers. We take pride in increasing the demand for industrial products across the universe.
     icon: /images/explosions.svg
+bannerHeight: tall
 ---

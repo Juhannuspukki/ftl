@@ -34,7 +34,7 @@
 
   {{ block "header" . }}{{ partial "header" . }}{{end}}
 
-  <main>
+  <main class='{{ if eq .Params.bannerHeight "short" }} short-banner {{ end}}'>
 
     {{ block "main" . }}{{end}}
 
