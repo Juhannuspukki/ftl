@@ -1,0 +1,92 @@
+
+header {
+  height: $bannerheight;
+  nav {
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    width: 70%;
+    text-align: right;
+    a {
+      display: inline-block;
+      padding: 1rem 1rem 0.25rem;
+      font-weight: 700;
+      text-decoration: none;
+    }
+  }
+  .ftl-stripe {
+    position: fixed;
+    z-index: -12;
+    left: -30rem;
+    bottom: calc(100vh - 21rem);
+    border-right: 0.5rem solid $white-color;
+    background-color: $blue-color;
+    width: 30rem;
+    height: 60rem;
+    transform: rotate(30deg);
+    transform-origin: bottom right;
+    transition: transform 0.2s ease-in;
+  }
+  .ftl-symbol {
+    position: fixed;
+    z-index: -11;
+    width: 7rem;
+  }
+  .ftl-logo {
+    position: fixed;
+    z-index: -11;
+    left: 50%;
+    top: 40vh;
+    transform: translate(-48%, -50%);
+    width: 14rem;
+  }
+  .header-background {
+    position: fixed;
+    z-index: -13;
+    width: 100%;
+    height: $bannerheight;
+    object-fit: cover;
+  }
+  @media screen and (max-width: 700px) {
+    nav {
+      position: fixed;
+      text-align: left;
+      width: 75%;
+      z-index: 6;
+      a {
+        color: transparent;
+        display: block;
+        padding: 1rem 1rem 0.25rem;
+        font-weight: 700;
+        text-decoration: none;
+        transition: color 0.1s linear 0s;
+      }
+      &.responsive {
+        a {
+          color: $white-color;
+          transition: color 0.2s linear 0.1s;
+        }
+      }
+    }
+    .ftl-stripe {
+      bottom: calc(100vh - 12rem);
+      z-index: 5;
+    }
+    .ftl-symbol {
+      width: 4rem;
+      z-index: 6;
+    }
+    .ftl-stripe.responsive {
+      transform: rotate(90deg);
+  }
+  }
+  &.short-banner {
+    height: $shortbannerheight;
+    .header-background {
+      height: $shortbannerheight;
+    }
+    .ftl-logo {
+      top: 25vh;
+    }
+  }
+}

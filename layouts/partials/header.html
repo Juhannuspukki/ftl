@@ -1,12 +1,12 @@
 <header class='{{ if eq .Params.bannerHeight "short" }} short-banner {{ end}}'>
-  <nav>
+  <nav class="main-nav" id="nav-links">
     <a href="/">Home</a>
     <a href="/diplomacy">Diplomacy</a>
     <a href="/research-calculator">Research</a>
     <a href="https://discord.gg/StJ9tNErUs">Discord</a>
   </nav>
-  <div class="ftl-stripe"></div>
-  <img class="ftl-symbol" src="/images/ftl-symbol.svg" alt="Atom symbol">
+  <div class="ftl-stripe" id="header"></div>
+  <img class="ftl-symbol" src="/images/ftl-symbol.svg" alt="Atom symbol" onclick="navBar()">
   <img class="ftl-logo" src="/images/logo.svg" alt="FTL Industries">
   <img class="header-background" src="{{ .Params.banner }}" alt="{{ .Params.bannerAlt }}">
 </header>

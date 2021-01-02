@@ -1,22 +1,8 @@
+@import 'constants';
+@import 'header';
+
 @import '/bootstrap/bootstrap-grid.scss';
 
-$blue-color: #2C7CB1;
-$white-color: #FFFFFF;
-
-$bannerheight: 80vh;
-$shortbannerheight: 50vh;
-
-$font: "Exo", sans-serif;
-
-$responsive-font-big: calc(24px + 2.2vw);
-$responsive-font-medium: calc(24px + 1.8vw);
-$responsive-font-small: calc(18px + 1.4vw);
-
-@font-face {
-  font-family: "Exo";
-  font-display: fallback;
-  src: url('/fonts/Exo-VariableFont_wght.ttf') format('truetype');
-}
 
 body, section {
   margin: 0;
@@ -51,71 +37,6 @@ h2 {
   font-size: $responsive-font-small;
   padding: 4rem 0 0;
   margin: 0;
-}
-
-header {
-  height: $bannerheight;
-  nav {
-    position: absolute;
-    top: 0;
-    right: 1rem;
-    width: 70%;
-    text-align: right;
-    a {
-      display: inline-block;
-      padding: 1rem 1rem 0.25rem;
-      font-weight: 700;
-      text-decoration: none;
-    }
-  }
-  .ftl-stripe {
-    position: fixed;
-    z-index: -12;
-    left: -5rem;
-    top: -5rem;
-    border-right: 0.5rem solid $white-color;
-    background-color: $blue-color;
-    width: 11rem;
-    height: 30rem;
-    transform: rotate(30deg);
-  }
-  .ftl-symbol {
-    position: fixed;
-    z-index: -11;
-    width: 8rem;
-  }
-  .ftl-logo {
-    position: fixed;
-    z-index: -11;
-    left: 50%;
-    top: 40vh;
-    transform: translate(-48%, -50%);
-    width: 14rem;
-  }
-  .header-background {
-    position: fixed;
-    z-index: -13;
-    width: 100%;
-    height: $bannerheight;
-    object-fit: cover;
-  }
-  @media screen and (max-width: 767px) {
-    .ftl-stripe {
-      left: -9rem;
-    }
-    .ftl-symbol {
-      width: 5rem;
-    }
-  }
-  &.short-banner {
-    height: $shortbannerheight;
-    .header-background {
-      height: $shortbannerheight;
-    }
-    .ftl-logo {
-      top: 25vh;
-    }
-  }
 }
 
 main {

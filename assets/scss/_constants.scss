@@ -1,0 +1,17 @@
+$blue-color: #2C7CB1;
+$white-color: #FFFFFF;
+
+$bannerheight: 80vh;
+$shortbannerheight: 50vh;
+
+$font: "Exo", sans-serif;
+
+$responsive-font-big: calc(24px + 2.2vw);
+$responsive-font-medium: calc(24px + 1.8vw);
+$responsive-font-small: calc(18px + 1.4vw);
+
+@font-face {
+  font-family: "Exo";
+  font-display: fallback;
+  src: url('/fonts/Exo-VariableFont_wght.ttf') format('truetype');
+}
