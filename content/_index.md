@@ -10,6 +10,10 @@ people:
     quote: From honour to ashes.
     portrait: /images/characters/Bob.png
     location: Maple syrup and hockey sticks
+  - name: BeanMan
+    quote: Not enough stabs.
+    portrait: /images/characters/Bean.png
+    location: 27.9 N 86.9 E
   - name: Idol Wraith
     quote: Every idol, however exalted, turns out, in the long run, to be a Moloch, hungry for human sacrifice.
     portrait: /images/characters/Idol.png
