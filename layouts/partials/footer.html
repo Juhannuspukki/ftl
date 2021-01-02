@@ -1,5 +1,7 @@
 <footer>
   <img class="logo" src="/images/logo.svg" alt="FTL Industries Logo">
   <img class="rifters" src="/images/rifters.png" aria-hidden="true">
-  <p class="footer-text">*At least we think so</p>
+  {{ if eq .RelPermalink "/"}}
+    <p class="footer-text">*At least we think so</p>
+  {{ end }}
 </footer>

@@ -18,7 +18,7 @@ header {
     position: fixed;
     z-index: -12;
     left: -30rem;
-    bottom: calc(100vh - 21rem);
+    top: -40rem;
     border-right: 0.5rem solid $white-color;
     background-color: $blue-color;
     width: 30rem;
@@ -51,7 +51,7 @@ header {
     nav {
       position: fixed;
       text-align: left;
-      width: 75%;
+      left: 5rem;
       z-index: 6;
       a {
         color: transparent;
@@ -69,10 +69,11 @@ header {
       }
     }
     .ftl-stripe {
-      bottom: calc(100vh - 12rem);
+      top: -48rem;
       z-index: 5;
     }
     .ftl-symbol {
+      cursor: pointer;
       width: 4rem;
       z-index: 6;
     }
