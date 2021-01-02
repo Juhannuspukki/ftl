@@ -1,0 +1,13 @@
+<div class="col-lg-4 col-md-6 member-card">
+  <div class="member-card-inner">
+    <img src="{{ .portrait }}" aria-hidden="true">
+    <div class="quote-container">
+      {{ if .quote }}
+        <span class="quote">"{{ .quote }}"</span>
+      {{ end }}
+    </div>
+    <span class="role">{{ .role }}</span>
+  </div>          
+  <p class="name">{{ .name }}</p>
+  <p class="location">{{ .location }}</p>
+</div>

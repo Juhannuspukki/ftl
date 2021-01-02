@@ -1,6 +1,9 @@
 ---
 title: "The #1 corporation in EVE: Echoes"
 metaDescription: Join FTL Industries and experience history being made.
+banner: /images/background-banner.jpg
+bannerAlt: Stargate surrounded by bubbles
+bannerHeight: tall
 people:
   - name: The Mandolorian
     quote: This is the Vishny Way.
@@ -57,5 +60,4 @@ activities:
   - title: Explosions
     description: It's no good to produce industrial products if there are no buyers. We take pride in increasing the demand for industrial products across the universe.
     icon: /images/explosions.svg
-bannerHeight: tall
 ---

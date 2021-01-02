@@ -1,0 +1,27 @@
+{{ define "main" }}
+
+<section>
+  <div class="container">
+    <h1>Schedule a meeting with a diplomat</h1>
+    <div class="people">
+      <div class="container member-container">
+        <div class="row member-list">
+          <div class="col-lg-4 col-md-3"></div>
+          {{ range .Params.people }}
+            {{ partial "members/member-card" . }}
+          {{ end }}
+          <div class="col-lg-4 col-md-3"></div>
+        </div>
+      </div>
+    </div>
+    <p class="centered">
+      For all diplomatic talks contact Aluhn, <a href="https://discord.gg/StJ9tNErUs">preferrably on Discord.</a>
+    </p>
+    <h2>Alliance offers</h2>
+    <img class="alliance-logo" src="/images/gravity-logo.svg" alt="Gravity Alliance logo">
+    <p class="centered">
+      FTL Industries is the co-founder of G R A V I T Y alliance. No alliance offers are considered.
+    </p>  </div>
+</section>
+
+{{ end }}

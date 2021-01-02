@@ -11,17 +11,7 @@
     <p>What is the best ship in EVE?<br>We value friendly atmosphere above all else.</p>
     <div class="row member-list">
       {{ range .Params.people }}
-      <div class="col-lg-4 col-md-6 member-card">
-        <div class="member-card-inner">
-          <img src="{{ .portrait }}" aria-hidden="true">
-          <div class="quote-container">
-            <span class="quote">"{{ .quote }}"</span>
-          </div>
-          <span class="role">{{ .role }}</span>
-        </div>          
-        <p class="name">{{ .name }}</p>
-        <p class="location">{{ .location }}</p>
-      </div>
+        {{ partial "members/member-card" . }}
       {{ end }}
     </div>
   </div>
@@ -55,9 +45,7 @@
     </div>
   </div>
 </section>
-<section class="space">
-
-</section>
+<section class="space"></section>
 <section class="join">
   <div class="container small-container">
     <h2>Interested in joining us?</h2>
