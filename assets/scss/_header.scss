@@ -23,7 +23,7 @@ header {
     background-color: $blue-color;
     width: 30rem;
     height: 60rem;
-    transform: rotate(30deg);
+    transform: rotate(35deg);
     transform-origin: bottom right;
     transition: transform 0.2s ease-in;
   }
@@ -56,6 +56,7 @@ header {
       a {
         color: transparent;
         display: block;
+        visibility: hidden;
         padding: 1rem 1rem 0.25rem;
         font-weight: 700;
         text-decoration: none;
@@ -63,13 +64,14 @@ header {
       }
       &.responsive {
         a {
+          visibility: visible;
           color: $white-color;
           transition: color 0.2s linear 0.1s;
         }
       }
     }
     .ftl-stripe {
-      top: -48rem;
+      top: -49rem;
       z-index: 5;
     }
     .ftl-symbol {
