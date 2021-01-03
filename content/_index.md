@@ -52,12 +52,12 @@ people:
     role: Chairman
 activities:
   - title: Mining
-    description: We have a bunch of people for really enjoy mining for some reason. This is why we have mining ops every week!
+    description: We have a bunch of people who really enjoy mining for some reason. This is why we have mining ops every week!”
     icon: /images/mining.svg
   - title: Industry
     description: Since there is demand for all sorts of ships inside the corporation, we have our refiners and industrialists making everything from rigs to rattlesnakes.
     icon: /images/industry.svg
   - title: Explosions
-    description: It's no good to produce industrial products if there are no buyers. We take pride in increasing the demand for industrial products across the universe.
+    description: There is no reason to produce industrial products if there are no buyers. We take pride in increasing the demand for industrial products across the universe.
     icon: /images/explosions.svg
 ---
