@@ -1,6 +1,7 @@
 ---
 title: EVE Echoes themed Discord emojis
 metaDescription: Download a free set of Eve Echoes-themed Discord emojis here!
+ogImage: /images/og-image-2.jpg
 banner: /images/providence.jpg
 bannerHeight: short
 posters:

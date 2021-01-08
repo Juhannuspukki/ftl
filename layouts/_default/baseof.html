@@ -19,7 +19,12 @@
   <meta property="og:description" content="{{ .Summary }}">
   {{ end }}
 
+  {{ if .Params.ogImage }}
+  <meta property="og:image" content="{{ .Params.ogImage }}">
+  {{ else }}
   <meta property="og:image" content="/images/og-image.jpg">
+  {{ end }}
+
   <link rel="canonical" href="{{ .Permalink }}" />
 
   {{ $style := resources.Get "scss/main.scss" | toCSS | minify | fingerprint }}
