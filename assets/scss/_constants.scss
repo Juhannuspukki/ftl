@@ -1,4 +1,4 @@
-$blue-color: #2C7CB1;
+$blue-color: #2C7CB1DD;
 $white-color: #FFFFFF;
 
 $bannerheight: 80vh;
@@ -9,6 +9,9 @@ $font: "Exo", sans-serif;
 $responsive-font-big: calc(24px + 2.2vw);
 $responsive-font-medium: calc(24px + 1.8vw);
 $responsive-font-small: calc(18px + 1.4vw);
+
+$outer-shadow: 0 5px 10px 0 rgba(0,0,0,0.50), 0 -5px 10px 0 rgba(255,255,255,0.30);
+$inner-shadow: inset 0 -5px 10px 0 rgba(255,255,255,0.30), inset 0 5px 10px 0 rgba(0,0,0,0.50);
 
 @font-face {
   font-family: "Exo";

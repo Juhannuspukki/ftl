@@ -1,8 +1,9 @@
 
 header {
   height: $bannerheight;
+  max-height: 1000px;;
   nav {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 1rem;
     width: 70%;
@@ -21,11 +22,13 @@ header {
     top: -40rem;
     border-right: 0.5rem solid $white-color;
     background-color: $blue-color;
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
     width: 30rem;
     height: 60rem;
     transform: rotate(35deg);
     transform-origin: bottom right;
-    transition: transform 0.2s ease-in;
+    transition: transform 0.2s ease-in, top 0.2s ease-in;
   }
   .ftl-symbol {
     position: fixed;
@@ -45,7 +48,8 @@ header {
     z-index: -13;
     width: 100%;
     height: $bannerheight;
-    object-fit: cover;
+    background-position: center;
+    background-size: cover;
   }
   @media screen and (max-width: 700px) {
     nav {
@@ -73,6 +77,9 @@ header {
     .ftl-stripe {
       top: -49rem;
       z-index: 5;
+      &.responsive {
+        top: -43rem;
+      }
     }
     .ftl-symbol {
       cursor: pointer;

@@ -1,0 +1,30 @@
+{{ define "main" }}
+
+<section class="media bottommost-section">
+  <div class="container small-container">
+    <h1>Media assets</h1>
+    <p class="centered">Over time, members of FTL have produced various kinds of media related to EVE Echoes. You can find some of them here.</p>
+    <h2>Discord emojis</h2>
+    <div class="row media-row">
+      <div class="col-sm-6">
+        <img class="discord-emojis" src="/images/icons.png" alt="Discord icons">
+      </div>
+      <div class="col-sm-6">
+        <p >
+          We created this set of 42 icons to be used as custom emojis on our Discord server. Feel free to download and use them on your server as well!
+        </p>
+        <a href="/images/media/emojis.zip" class="link-button">Download .zip</a>
+      </div>
+    </div>
+    <h2>Posters and wallpapers</h2>
+    <p class="centered">Click on any image to get a high-res version.</p>
+    <div class="row media-row">
+      {{ range .Params.posters }}
+          {{ $imageResource := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/uploads/" .poster ) }}
+          {{ $resized := $imageResource.Resize "256x q80"}}
+          <a class="col-md-3 col-4 poster-link" href="{{ .poster }}" style="background-image:url('{{ $resized.Permalink }}')"></a>
+      {{ end }}
+    </div>
+</section>
+
+{{ end }}

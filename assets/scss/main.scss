@@ -1,13 +1,18 @@
 @import 'constants';
+@import 'people';
 @import 'header';
+@import 'footer';
 
 @import '/bootstrap/bootstrap-grid.scss';
 
 
-body, section {
+body {
   margin: 0;
-  background-color: $blue-color;
   height: 100%;
+  background-attachment: fixed;
+}
+section {
+  background-clip: content-box;
 }
 
 p, a, ul, li, label, span {
@@ -43,65 +48,12 @@ main {
   width: 100%;
   border-top: 0.25rem solid $white-color;
   background-color: $blue-color;
-  &.short-banner {
-    top: $shortbannerheight;
-  }
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
 }
 
-.people {
-  p {
-    text-align: center;
-  }
-  .member-list {
-    margin-top: 2rem;
-    .member-card {
-      .member-card-inner {
-        position: relative;
-        height: 16rem;
-        border: 0.25rem solid $white-color;
-        border-radius: 1rem;      
-        margin-top: 4rem;
-        img {
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          border-radius: 0 0 0 0.75rem;
-          height: 17rem;
-        }
-        .quote-container {
-          position: absolute;
-          left: 52%;
-          top: 1rem;
-          max-width: 45%;
-          .quote {
-            font-size: 0.85rem;
-            font-weight: 700;
-          }
-        }
-        .role {
-          position: absolute;
-          bottom: 1rem;
-          right: 1rem;
-          font-weight: 700;
-        }
-      }
-      .name {
-        margin: 1rem 0 0;
-        font-size: 1.5rem;
-        text-align: center;      
-        font-weight: 700;
-      }
-      .location {
-        margin: 0;
-        text-align: center;
-      }
-    }
-  }
-  @media screen and (max-width: 767px) {
-    .member-container {
-      max-width: 360px;
-    }
-  }
+.bottommost-section {
+  padding-bottom: 6rem;
 }
 
 .activities {
@@ -126,6 +78,9 @@ main {
 
 .small-container {
   max-width: 738px;
+  img {
+    width: 100%;
+  }
 }
 
 .center-container {
@@ -181,35 +136,6 @@ main {
   }
 }
 
-footer {
-  position: relative;
-  padding: 6rem 0 4rem;
-  background-color: $blue-color;
-  .logo {
-    display: block;
-    margin: auto;
-    height: 6rem;
-  }
-  .rifters {
-    position: absolute;
-    height: 6rem;
-    bottom: 0;
-    left: calc(70%);
-  }
-  @media screen and (max-width: 512px) {
-    .rifters {
-      display: none;
-    }
-  }
-  .footer-text {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 0.5rem;
-    font-size: 0.5rem;
-  }
-}
-
 .centered {
   text-align: center;
 }
@@ -223,4 +149,38 @@ footer {
   display: block;
   margin: 1rem auto 0;
   height: 2rem;
+}
+
+.link-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: $blue-color;
+  box-shadow: $outer-shadow;
+  text-decoration: none;
+}
+
+.media-row {
+  margin-top: 2rem;
+  .discord-emojis {
+    box-shadow: $outer-shadow;
+    border-radius: 0.5rem;
+  }
+  .poster-link {
+    display: block;
+    height: 16rem;
+    background-size: cover;
+    background-position-x: center;
+  }
+  @media screen and (max-width: 575px) {
+    p {
+      text-align: center;
+    }
+    .link-button {
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
 }

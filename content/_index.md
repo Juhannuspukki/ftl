@@ -1,8 +1,7 @@
 ---
 title: "The #1 corporation in EVE: Echoes"
-metaDescription: Join FTL Industries and experience history being made.
+metaDescription: Join FTL Industries and experience history being made. Mining ops every week, PvP, gatecamps, and access to high-quality systems in nullsec. Join us and you will understand why we have outlasted our competitors and have one of the lowest employee turnover rates in New Eden.
 banner: /images/background-banner.jpg
-bannerAlt: Stargate surrounded by bubbles
 bannerHeight: tall
 people:
   - name: The Mandolorian
