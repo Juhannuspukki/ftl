@@ -8,7 +8,10 @@
     <a href="https://discord.gg/StJ9tNErUs">Discord</a>
   </nav>
   <div class="ftl-stripe" id="header"></div>
-  <img class="ftl-symbol" src="/images/ftl-symbol.svg" alt="Atom symbol" onclick="navBar()">
+  <a href="/" class="ftl-symbol-link" aria-label="Go to front page">
+    <img class="ftl-symbol" src="/images/ftl-symbol.svg" alt="Atom symbol">
+  </a>
+  <img class="menu-icon" src="/images/menu.svg" alt="Menu" onclick="navBar()">
   <img class="ftl-logo" src="/images/logo.svg" alt="FTL Industries">
   <div class="header-background" style="background-image:url('{{ .Params.banner }}')">
 </header>

@@ -30,10 +30,20 @@ header {
     transform-origin: bottom right;
     transition: transform 0.2s ease-in, top 0.2s ease-in;
   }
-  .ftl-symbol {
+  .ftl-symbol-link {
     position: fixed;
-    z-index: -11;
+    z-index: 0;
     width: 7rem;
+    .ftl-symbol {
+      width: 100%;
+    }
+  }
+  .menu-icon {
+    position: fixed;
+    display: none;
+    width: 5rem;
+    padding: 1rem;
+    z-index: 6;
   }
   .ftl-logo {
     position: fixed;
@@ -75,16 +85,18 @@ header {
       }
     }
     .ftl-stripe {
-      top: -49rem;
+      top: -53rem;
       z-index: 5;
+      transform: rotate(65deg);
       &.responsive {
         top: -43rem;
       }
     }
     .ftl-symbol {
-      cursor: pointer;
-      width: 4rem;
-      z-index: 6;
+      display: none;
+    }
+    .menu-icon {
+      display: inline-block;
     }
     .ftl-stripe.responsive {
       transform: rotate(90deg);
