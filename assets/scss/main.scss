@@ -159,6 +159,10 @@ main {
   background-color: $blue-color;
   box-shadow: $outer-shadow;
   text-decoration: none;
+  &:hover {
+    opacity: 1;
+    background: $gradient;
+  }
 }
 
 .media-row {
