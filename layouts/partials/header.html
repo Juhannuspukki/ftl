@@ -12,6 +12,13 @@
     <img class="ftl-symbol" src="/images/ftl-symbol.svg" alt="Atom symbol">
   </a>
   <img class="menu-icon" src="/images/menu.svg" alt="Menu" onclick="navBar()">
+  {{ if eq .Params.bannerHeight "short" }}
+  <div class="header-container">
+    <h1>{{ .Params.headerTitle }}</h1>
+    <p>{{ .Params.headerSubtitle }}</p>
+  </div>
+  {{ else }}
   <img class="ftl-logo" src="/images/logo.svg" alt="FTL Industries">
+  {{ end}}
   <div class="header-background" style="background-image:url('{{ .Params.banner }}')">
 </header>

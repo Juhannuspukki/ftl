@@ -17,14 +17,14 @@ section {
 
 p, a, ul, li, label, span {
   font-family: $font;
-  font-weight: 400;
+  font-variation-settings: 'wght' 400;
   color: $white-color
 }
 
 h1, h2, h3, h4 {
   text-align: center;
   font-family: $font;
-  font-weight: 700;
+  font-variation-settings: 'wght' 700;
   color: $white-color
 }
 
@@ -187,4 +187,11 @@ main {
       transform: translateX(-50%);
     }
   }
+}
+
+.supreme-commander {
+  display: block;
+  margin: auto;
+  padding-top: 4rem;
+  width: 15rem;
 }

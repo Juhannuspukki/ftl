@@ -2,13 +2,14 @@ $blue-color: #2C7CB1DD;
 $white-color: #FFFFFF;
 
 $bannerheight: 80vh;
-$shortbannerheight: 50vh;
+$shortbannerheight: 60vh;
 
 $font: "Exo", sans-serif;
 
-$responsive-font-big: calc(24px + 2.2vw);
+$responsive-font-big: calc(24px + 2.6vw);
 $responsive-font-medium: calc(24px + 1.8vw);
 $responsive-font-small: calc(18px + 1.4vw);
+$responsive-font-tiny: calc(16px + 1.2vw);
 
 $gradient: linear-gradient(180deg, #28709f, #2f85bd);
 
@@ -16,7 +17,15 @@ $outer-shadow: 0 5px 15px 0 rgba(0,0,0,0.25), 0 -5px 15px 0 rgba(255,255,255,0.3
 $inner-shadow: inset 0 -5px 10px 0 rgba(255,255,255,0.30), inset 0 5px 10px 0 rgba(0,0,0,0.50);
 
 @font-face {
-  font-family: "Exo";
-  font-display: fallback;
-  src: url('/fonts/Exo-VariableFont_wght.ttf') format('truetype');
+  font-family: 'Exo';
+  src: url('/fonts/Exo-VariableFont_wght.ttf') format("truetype-variations");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Exo';
+  src: url('/fonts/Exo-Italic-VariableFont_wght.ttf') format("truetype-variations");
+  font-weight: 100 900;
+  font-style: italic;
 }

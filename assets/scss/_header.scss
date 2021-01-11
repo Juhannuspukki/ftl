@@ -11,7 +11,7 @@ header {
     a {
       display: inline-block;
       padding: 1rem 1rem 0.25rem;
-      font-weight: 700;
+      font-variation-settings: 'wght' 700;
       text-decoration: none;
     }
   }
@@ -51,7 +51,7 @@ header {
     left: 50%;
     top: 40vh;
     transform: translate(-48%, -50%);
-    width: 14rem;
+    width: 18rem;
   }
   .header-background {
     position: fixed;
@@ -60,6 +60,23 @@ header {
     height: $bannerheight;
     background-position: center;
     background-size: cover;
+  }
+  .header-container {
+    position: fixed;
+    top: $shortbannerheight / 2;
+    left: 20%;
+    transform: translateY(-50%);
+    max-width: 90%;
+    h1 {
+      padding: 0;
+      text-align: left;
+      font-size: $responsive-font-big;
+    }
+    p {
+      margin: 0;
+      font-variation-settings: 'wght' 700;
+      font-size: $responsive-font-tiny;
+    }
   }
   @media screen and (max-width: 700px) {
     nav {
@@ -101,7 +118,17 @@ header {
     }
     .ftl-stripe.responsive {
       transform: rotate(90deg);
-  }
+    }
+    .header-container {
+      position: fixed;
+      top: $shortbannerheight / 2;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 80%;
+      h1, p {
+
+      }
+    }
   }
   &.short-banner {
     height: $shortbannerheight;

@@ -4,6 +4,8 @@ metaDescription: View and download wallpapers and posters created by the members
 ogImage: /images/og-image-2.jpg
 banner: /images/providence.jpg
 bannerHeight: short
+headerTitle: Media Assets
+headerSubtitle: Pics 'n' stuff
 posters:
   - poster: /uploads/wallpaper-1.png
   - poster: /uploads/wallpaper-2.png

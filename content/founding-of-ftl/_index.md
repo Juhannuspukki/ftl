@@ -1,11 +1,12 @@
 ---
 title: The story of FasterThanLight
 metaDescription: Read the inspiring rags-to-riches story as the legend himself tells it.
-ogImage: /images/portrait.png
-banner: /images/portraits.jpg
+ogImage: /images/FasterThanLight.jpg
+banner: /images/saturn-background.jpg
 bannerHeight: short
+headerTitle: The story of FasterThanLight
+headerSubtitle: What can you learn from him?
 ---
-# The story  of FasterThanLight
 ## Part 1
 
 This is a story of how this corporation was founded.
