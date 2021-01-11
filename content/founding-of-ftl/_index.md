@@ -63,6 +63,6 @@ _Lirsautton, 0447 hours._
 
 1. Take calculated risks. The cost of a frigate was insignificant next to the chance to earn 25 million.
 
-2. Make no assumptions. If FasterThanLight had assumed that the canister is locked or the task is impossible, he would be never have gotten the reward.
+2. Make no assumptions. If FasterThanLight had assumed that the canister is locked or the task is impossible, he would never had got the reward.
 
 3. FasterThanLight is clearly a very intelligent, experienced and cunning son-of-a-bitch who deserves everyone’s great respect.
