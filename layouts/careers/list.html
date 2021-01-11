@@ -1,0 +1,37 @@
+{{ define "main" }}
+
+<section class="bottommost-section">
+  <div class="container very-small-container">
+    {{ .Content }}
+    <form action="https://formspree.io/f/xnqolojp" method="POST">
+      <h2>Apply to join</h2>
+      <p>You can apply either on shooting us a message on <a href="https://discord.gg/StJ9tNErUs">Discord (ask for Aluhn)</a> or with this form.</p>
+      <div class="row">
+        <div class="col-md-6">
+          <label>
+            Name
+            <input type="text" name="Name" placeholder="In-game name" required>
+          </label>
+        </div>
+        <div class="col-md-6">
+          <label>
+            Discord
+            <input type="text" name="Discord" placeholder="CaSe sEnsITivE" required>
+          </label>
+        </div>
+        <div class="col-md-12">
+          <label>
+            Tell us about yourself
+            <textarea
+              name="Application"
+              placeholder="Whatever you wish us to know. Need inspiration? Tech level, goals in game, past references, killmark count in your favorite ship, where you heard of us, why you want to join and your favorite food."
+              required></textarea>
+          </label>
+        </div>
+      </div>
+      <button class="link-button" type="submit">Send</button>
+    </form>
+  </div>
+</section>
+
+{{ end }}

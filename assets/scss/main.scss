@@ -15,7 +15,7 @@ section {
   background-clip: content-box;
 }
 
-p, a, ul, li, label, span {
+p, a, ul, li, label, span, input, textarea, button {
   font-family: $font;
   font-variation-settings: 'wght' 400;
   color: $white-color
@@ -78,6 +78,13 @@ main {
 
 .small-container {
   max-width: 738px;
+  img {
+    width: 100%;
+  }
+}
+
+.very-small-container {
+  max-width: 512px;
   img {
     width: 100%;
   }
@@ -155,10 +162,12 @@ main {
   display: inline-block;
   margin-top: 1rem;
   padding: 1rem;
+  border: none;
   border-radius: 0.5rem;
   background-color: $blue-color;
   box-shadow: $outer-shadow;
   text-decoration: none;
+  cursor: pointer;
   &:hover {
     opacity: 1;
     background: $gradient;
@@ -194,4 +203,36 @@ main {
   margin: auto;
   padding-top: 4rem;
   width: 15rem;
+}
+
+form {
+  label {
+    display: block;
+    margin-top: 1rem;
+    input, textarea {
+      display: block;
+      width: 100%;
+      padding: 1.1rem 1.4rem 1rem 1.5rem;
+      margin-top: 1rem;
+      border-radius: 0.5rem;
+      font-size: 1rem;
+      border: none;
+      box-shadow: $inner-shadow;
+      background-color: $blue-color;
+      color: $white-color
+    }
+    input::placeholder, textarea::placeholder {
+      color: $white-color;
+      opacity: 0.5;
+    }
+    textarea {
+      height: 12rem;
+    }
+  }
+  .link-button {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 2rem;
+  }
 }
