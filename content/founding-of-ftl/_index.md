@@ -1,7 +1,7 @@
 ---
 title: The story of FasterThanLight
 metaDescription: Read the inspiring rags-to-riches story as the legend himself tells it.
-ogImage: /images/FasterThanLight.jpg
+ogImage: /images/FasterThanLight.png
 banner: /images/saturn-background.jpg
 bannerHeight: short
 headerTitle: The story of FasterThanLight
