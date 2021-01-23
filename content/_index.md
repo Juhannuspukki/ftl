@@ -4,10 +4,10 @@ metaDescription: Join FTL Industries and experience history being made. Mining o
 banner: /images/planet-background.jpg
 bannerHeight: tall
 people:
-  - name: The Mandolorian
-    quote: This is the Vishny Way.
-    portrait: /images/characters/Mando.png
-    location: United Kingdom
+  - name: Iliji
+    quote: Ad astra per aspera.
+    portrait: /images/characters/Regi.png
+    location: Rodrigues, Mauritius
   - name: Bob30 Petty
     quote: From honour to ashes.
     portrait: /images/characters/Bob.png
